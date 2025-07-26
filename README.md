@@ -114,7 +114,7 @@ opkg install luci-theme-argon*.ipk
 ### Install luci-app-argon-config
 
 ```bash
-wget --no-check-certificate -O luci-app-argon-config_0.9_all.ipk https://github.com/jerrykuku/luci-app-argon-config/releases/download/v1.2/luci-app-argon-config_1.2_all.ipk
+wget --no-check-certificate -O luci-app-argon-config_0.9_all.ipk https://github.com/jerrykuku/luci-theme-argon/releases/download/v2.5.2/luci-app-argon-config_1.2_all.ipk
 opkg install luci-app-argon-config*.ipk
 ```
 
