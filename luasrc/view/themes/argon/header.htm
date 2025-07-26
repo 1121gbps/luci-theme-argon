@@ -3,6 +3,7 @@
 
 	luci-theme-argon
 	Copyright 2020 Jerrykuku <jerrykuku@qq.com>
+	Modded by 1121gbps <contact@hiniature.xyz>
 
 	Have a bug? Please create an issue here on GitHub!
 	https://github.com/jerrykuku/luci-theme-argon/issues
@@ -40,6 +41,7 @@
 	local mode = 'normal'
 	local dark_css = fs.readfile('/www/luci-static/argon/css/dark.css')
 	local bar_color = '#5e72e4'
+        local bg_image = uci:get_first('argon', 'global', 'background_image') or 'Wallpaper.jpg'
 	local primary, dark_primary, blur_radius, blur_radius_dark, blur_opacity
 	if fs.access('/etc/config/argon') then
 		primary = uci:get_first('argon', 'global', 'primary')
@@ -50,6 +52,8 @@
 		blur_opacity_dark = uci:get_first('argon', 'global', 'transparency_dark')
 		mode = uci:get_first('argon', 'global', 'mode')
 		bar_color = mode == 'dark' and dark_primary or primary
+                bg_image = uci:get_first('argon', 'global', 'bg_image') or 'Wallpaper.jpg'
+
 	end
 
 	-- Brand name
@@ -86,7 +90,7 @@
 	<meta name="msapplication-TileColor" content="<%=bar_color%>">
 	<meta name="msapplication-TileImage" content="<%=media%>/icon/ms-icon-144x144.png">
 	<meta name="theme-color" content="<%=bar_color%>">
-	<link rel="stylesheet" href="<%=media%>/css/cascade.css<%# ?v=PKG_VERSION %>">
+	<link rel="stylesheet" href="<%=media%>/css/cascade.css?v=2.5">
 	<style title="text/css">
         <% if mode == 'normal' then %>
             @media (prefers-color-scheme: dark) {
@@ -106,6 +110,30 @@
         }
         <% end -%>
         </style>
+    <style>
+        body {
+            background: linear-gradient(
+                <% if mode == 'dark' then %>
+                    rgba(0,0,0,0.65), rgba(0,0,0,0.65)
+                <% else %>
+                    rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5)
+                <% end %>
+            ),
+            url("/luci-static/argon/background/<%=bg_image%>") center center no-repeat fixed
+            <% if mode == 'dark' then %>
+                rgba(38,38,38,0.88);
+            <% else %>
+                rgba(255,255,255,0.88);
+            <% end %>
+
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: #ccc;
+        }
+    </style>
+
 	<link rel="shortcut icon" href="<%=media%>/favicon.ico">
 	<% if node and node.css then %>
 	<link rel="stylesheet" href="<%=resource%>/<%=node.css%>">
@@ -115,13 +143,12 @@
 		<%=css %>
 	</style>
 	<% end -%>
-	<script src="<%=media%>/js/polyfill.min.js"></script>
+	<script src="<%=media%>/js/polyfill.min.js?v=2.5"></script>
 	<script src="<%=url('admin/translations', luci.i18n.context.lang)%>?v=<%=ver.luciversion%>"></script>
 	<script src="<%=resource%>/cbi.js?v=<%=ver.luciversion%>"></script>
 	<script src="<%=resource%>/luci.js?v=<%=ver.luciversion%>"></script>
 	<script src="<%=media%>/js/jquery.min.js?v=3.5.1"></script>
 </head>
-
 <body
 	class="lang_<%=luci.i18n.context.lang%> <% if node then %><%= striptags( node.title ) %><% end %> <% if luci.dispatcher.context.authsession then %>logged-in<% end %>"
 	data-page="<%= pcdata(table.concat(disp.context.requestpath, "-")) %>">

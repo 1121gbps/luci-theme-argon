@@ -1,0 +1,21 @@
+<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_32_10)">
+<mask id="path-1-outside-1_32_10" maskUnits="userSpaceOnUse" x="3" y="2" width="18" height="20" fill="black">
+<rect fill="white" x="3" y="2" width="18" height="20"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 13V11H13V7H11V11H4V13H11V17H13V13H20ZM12 3L15 7H9L12 3ZM12 21L9 17H15L12 21Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 13V11H13V7H11V11H4V13H11V17H13V13H20ZM12 3L15 7H9L12 3ZM12 21L9 17H15L12 21Z" fill="#363B3E"/>
+<path d="M20 11H21V10H20V11ZM13 11H12V12H13V11ZM13 7H14V6H13V7ZM11 7V6H10V7H11ZM11 11V12H12V11H11ZM4 11V10H3V11H4ZM4 13H3V14H4V13ZM11 13H12V12H11V13ZM11 17H10V18H11V17ZM13 17V18H14V17H13ZM13 13V12H12V13H13ZM15 7V8H17L15.8 6.4L15 7ZM9 7L8.2 6.4L7 8H9V7ZM9 17V16H7L8.2 17.6L9 17ZM15 17L15.8 17.6L17 16H15V17ZM21 13V11H19V13H21ZM20 10H13V12H20V10ZM14 11V7H12V11H14ZM13 6H11V8H13V6ZM10 7V11H12V7H10ZM11 10H4V12H11V10ZM3 11V13H5V11H3ZM4 14H11V12H4V14ZM10 13V17H12V13H10ZM11 18H13V16H11V18ZM14 17V13H12V17H14ZM13 14H20V12H13V14ZM11.2 3.6L14.2 7.6L15.8 6.4L12.8 2.4L11.2 3.6ZM15 6H9V8H15V6ZM9.8 7.6L12.8 3.6L11.2 2.4L8.2 6.4L9.8 7.6ZM12.8 20.4L9.8 16.4L8.2 17.6L11.2 21.6L12.8 20.4ZM9 18H15V16H9V18ZM14.2 16.4L11.2 20.4L12.8 21.6L15.8 17.6L14.2 16.4Z" fill="white" fill-opacity="0.8" mask="url(#path-1-outside-1_32_10)"/>
+</g>
+<defs>
+<filter id="filter0_d_32_10" x="0" y="0.399994" width="24" height="25.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_32_10"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_32_10" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -32,11 +32,13 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/jerrykuku/staff/master/argon_title4.svg">
 
-# A brand new OpenWrt LuCI theme
+# Yet new modified Argon theme
 
 Argon is **a clean and tidy OpenWrt LuCI theme** that allows<br/>
 users to customize their login interface with images or videos.  
 It also supports automatic and manual switching between light and dark modes.
+
+All rights & credits to [jerrykuku](https://github.com/jerrykuku), the creator of this Theme.
 
 [![license][license-badge]][license]
 [![prs][prs-badge]][prs]
@@ -68,6 +70,7 @@ It also supports automatic and manual switching between light and dark modes.
 - Support for custom uploading of images or videos as login background.
 - Automatically switch between light and dark modes with the system, and can also be set to a fixed mode.
 - Settings plugin with extensions [luci-app-argon-config][config-link]
+- Background inside OpenWrt LuCI panel (New)
 
 > **Upcoming Version **
 >
@@ -89,30 +92,14 @@ The latest version is v2.3.1 [Click here][en-us-release-log] to view the full ve
 
 ## Getting started
 
-### Build for Lean's LEDE project (deprecated)
-
-```bash
-cd lede/package/lean
-rm -rf luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
-make menuconfig #choose LUCI->Theme->Luci-theme-argon
-make -j1 V=s
-```
 
 ### Build for OpenWrt official SnapShots and ImmortalWrt
 
 ```bash
 cd openwrt/package
-git clone https://github.com/jerrykuku/luci-theme-argon.git
+git clone https://github.com/1121gbps/luci-theme-argon.git
 make menuconfig #choose LUCI->Theme->Luci-theme-argon
 make -j1 V=s
-```
-
-### Install for LuCI 18.06 ( Lean's LEDE )
-
-```bash
-wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/v1.8.2/luci-theme-argon_1.8.2-20230609_all.ipk
-opkg install luci-theme-argon*.ipk
 ```
 
 ### Install for OpenWrt official SnapShots and ImmortalWrt
@@ -120,14 +107,14 @@ opkg install luci-theme-argon*.ipk
 ```bash
 opkg install luci-compat
 opkg install luci-lib-ipkg
-wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/v2.3.2/luci-theme-argon_2.3.2-r20250207_all.ipk
+wget --no-check-certificate https://github.com/1121gbps/luci-theme-argon/releases/download/v2.5.2/luci-theme-argon_2.5.2-r20250726_all.ipk
 opkg install luci-theme-argon*.ipk
 ```
 
 ### Install luci-app-argon-config
 
 ```bash
-wget --no-check-certificate -O luci-app-argon-config_0.9_all.ipk https://github.com/jerrykuku/luci-app-argon-config/releases/download/v0.9/luci-app-argon-config_0.9_all.ipk
+wget --no-check-certificate -O luci-app-argon-config_0.9_all.ipk https://github.com/jerrykuku/luci-app-argon-config/releases/download/v1.2/luci-app-argon-config_1.2_all.ipk
 opkg install luci-app-argon-config*.ipk
 ```
 
@@ -150,12 +137,7 @@ opkg install luci-app-argon-config*.ipk
 
 Made with [contrib.rocks](https://contrib.rocks).
 
-## Related Projects
-
-- [luci-app-argon-config](https://github.com/jerrykuku/luci-app-argon-config): Argon theme config plugin
-- [openwrt-package](https://github.com/jerrykuku/openwrt-package): My OpenWrt package
-- [CasaOS](https://github.com/IceWhaleTech/CasaOS): A simple, easy-to-use, elegant open-source Personal Cloud system (My current main project)
-
 ## Credits
 
 [luci-theme-material](https://github.com/LuttyYang/luci-theme-material/)
+[jerrykuku](https://github.com/jerrykuku)
