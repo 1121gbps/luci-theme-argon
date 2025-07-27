@@ -30,9 +30,7 @@
 [immortalwrt]: https://github.com/immortalwrt/immortalwrt
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/jerrykuku/staff/master/argon_title4.svg">
-
-# Yet new modified Argon theme
+<img src="https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fupper.jpg?alt=media">
 
 Argon is **a clean and tidy OpenWrt LuCI theme** that allows<br/>
 users to customize their login interface with images or videos.  
@@ -54,8 +52,6 @@ All rights & credits to [jerrykuku](https://github.com/jerrykuku), the creator o
 [Screenshots](#screenshots) •
 [Contributors](#contributors) •
 [Credits](#credits)
-
-<img src="https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fupper.jpg?alt=media">
 </div>
 
 ## Key Features
