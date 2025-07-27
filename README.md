@@ -71,6 +71,7 @@ All rights & credits to [jerrykuku](https://github.com/jerrykuku), the creator o
 - Automatically switch between light and dark modes with the system, and can also be set to a fixed mode.
 - Settings plugin with extensions [luci-app-argon-config][config-link]
 - Background inside OpenWrt LuCI panel (New)
+- Modified sidebar orientation
 
 > **Upcoming Version **
 >
@@ -114,7 +115,7 @@ opkg install luci-theme-argon*.ipk
 ### Install luci-app-argon-config
 
 ```bash
-wget --no-check-certificate -O luci-app-argon-config_0.9_all.ipk https://github.com/1121gbps/luci-theme-argon/releases/download/v2.5.2/luci-app-argon-config_1.2_all.ipk
+wget --no-check-certificate -O luci-app-argon-config_1.2_all.ipk https://github.com/1121gbps/luci-theme-argon/releases/download/v2.5.2/luci-app-argon-config_1.2_all.ipk
 opkg install luci-app-argon-config*.ipk
 ```
 
@@ -126,8 +127,7 @@ opkg install luci-app-argon-config*.ipk
 
 ## Screenshots
 
-![desktop](/Screenshots/screenshot_pc.jpg)
-![mobile](/Screenshots/screenshot_phone.jpg)
+![desktop](https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fscreenshot-pc.jpg?alt=media)
 
 ## Contributors
 
