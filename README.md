@@ -99,6 +99,8 @@ opkg install luci-app-argon-config*.ipk
 - Chrome browser is highly recommended. There are some new css3 features used in this theme, currently only Chrome has the best compatibility.
 - Microsoft has officially retired Internet Explorer, RIP IE🙏<del>Currently, the mainline version of the IE series has bugs that need to be addressed.</del>
 - FireFox does not enable the backdrop-filter by default, [see here](https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter) for the opening method.
+- For changing background inside LuCI Dashboard, **navigate to System > Argon Config > Background Image Path (Inside dashboard).** Add or change background as you needs. Make sure to put your custom background inside **/www/luci-static/argon/background/**
+- Background Image Path is Case-Sensitive, make sure you're putting correct file name.
 
 ## Screenshots
 <img src="https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fscreenshot-pc.jpg?alt=media" style="border-radius: 16px; margin-bottom: 8px;">
