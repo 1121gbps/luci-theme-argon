@@ -47,9 +47,6 @@ All rights & credits to [jerrykuku](https://github.com/jerrykuku), the creator o
 [![download][download-badge]][download]
 [![contact][contact-badge]][contact]
 
-**English** |
-[简体中文][zh-cn-link]
-
 [Key Features](#key-features) •
 [Branch](#branch-introduction) •
 [Version History](#version-history) •
@@ -58,7 +55,7 @@ All rights & credits to [jerrykuku](https://github.com/jerrykuku), the creator o
 [Contributors](#contributors) •
 [Credits](#credits)
 
-<img src="https://raw.githubusercontent.com/jerrykuku/staff/master/argon2.gif">
+<img src="https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fupper.jpg?alt=media">
 </div>
 
 ## Key Features
@@ -71,28 +68,9 @@ All rights & credits to [jerrykuku](https://github.com/jerrykuku), the creator o
 - Automatically switch between light and dark modes with the system, and can also be set to a fixed mode.
 - Settings plugin with extensions [luci-app-argon-config][config-link]
 - Background inside OpenWrt LuCI panel (New)
-- Modified sidebar orientation
-
-> **Upcoming Version **
->
-> "The current theme uses Less for CSS construction, and the method for switching between light and dark modes is relatively primitive. Meanwhile, the official theme has already switched to the UT template. I am exploring a way to build the theme template using modern front-end development tools, initially settling on a solution using Vite + UnoCSS. This approach will utilize a proxy server for debugging and also support HMR (Hot Module Replacement), significantly improving development speed. Currently, the basic development framework has been set up, but due to a busy schedule, I still need some time to migrate the existing styles. Stay tuned!"
-
-## Branch Introduction
-
-There are currently two main branches that are adapted to different versions of the **OpenWrt** source code.  
-The table below will provide a detailed introduction:
-
-| Branch | Version | Description                        | Matching source                                           |
-| ------ | ------- | ---------------------------------- | --------------------------------------------------------- |
-| master | v2.x.x  | Support the latest version of LuCI | [Official OpenWrt][official] • [ImmortalWrt][immortalwrt] |
-| 18.06 (deprecated) | v1.x.x  | Support the 18.06 version of LuCI   | [Lean's LEDE][lede]                                         |
-
-## Version History
-
-The latest version is v2.3.1 [Click here][en-us-release-log] to view the full version history record.
+- Modified sidebar orientation (Updated)
 
 ## Getting started
-
 
 ### Build for OpenWrt official SnapShots and ImmortalWrt
 
@@ -106,6 +84,7 @@ make -j1 V=s
 ### Install for OpenWrt official SnapShots and ImmortalWrt
 
 ```bash
+opkg update
 opkg install luci-compat
 opkg install luci-lib-ipkg
 wget --no-check-certificate https://github.com/1121gbps/luci-theme-argon/releases/download/v2.5.2/luci-theme-argon_2.5.2-r20250726_all.ipk
@@ -139,5 +118,5 @@ Made with [contrib.rocks](https://contrib.rocks).
 
 ## Credits
 
-[luci-theme-material](https://github.com/LuttyYang/luci-theme-material/)
+[luci-theme-material](https://github.com/LuttyYang/luci-theme-material/) | 
 [jerrykuku](https://github.com/jerrykuku)
