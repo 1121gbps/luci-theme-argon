@@ -30,7 +30,7 @@
 [immortalwrt]: https://github.com/immortalwrt/immortalwrt
 
 <div align="center">
-<img src="https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fupper.jpg?alt=media">
+<img src="https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fupper.jpg?alt=media" style="border-radius: 16px; margin-bottom: 8px;">
 
 Argon is **a clean and tidy OpenWrt LuCI theme** that allows<br/>
 users to customize their login interface with images or videos.  
@@ -101,8 +101,7 @@ opkg install luci-app-argon-config*.ipk
 - FireFox does not enable the backdrop-filter by default, [see here](https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter) for the opening method.
 
 ## Screenshots
-
-![desktop](https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fscreenshot-pc.jpg?alt=media)
+<img src="https://firebasestorage.googleapis.com/v0/b/discord-cdn-sucks.appspot.com/o/image%2Fscreenshot-pc.jpg?alt=media" style="border-radius: 16px; margin-bottom: 8px;">
 
 ## Contributors
 
